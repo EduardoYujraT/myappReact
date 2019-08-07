@@ -2,6 +2,7 @@ import React from 'react';
 import {Nav, Navbar, NavItem} from 'react-bootstrap';
 import styled from 'styled-components';
 
+
 const Styles = styled.div`
     .navbar {
         background-color: #222;
@@ -16,6 +17,8 @@ const Styles = styled.div`
     }
 `;
 
+
+
 export const NavigationBar = () => (
     <Styles>
         <Navbar expand="lg">
@@ -24,11 +27,12 @@ export const NavigationBar = () => (
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
                     <NavItem><Nav.Link href="/">Home</Nav.Link></NavItem>
-                    <NavItem><Nav.Link href="/about">About</Nav.Link></NavItem>
-                    <NavItem><Nav.Link href="/contact">Contact</Nav.Link></NavItem>
+                    <NavItem><Nav.Link href="/miembros">Miembros</Nav.Link></NavItem>
+                    <NavItem><Nav.Link href="https://github.com/matiasalbacetti/LarrataFiles/issues/new">New Issue</Nav.Link></NavItem>
+                    
+                    
                 </Nav>
             </Navbar.Collapse>
-
         </Navbar>
     </Styles>
 )

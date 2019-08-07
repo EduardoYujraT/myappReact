@@ -1,4 +1,6 @@
 import React from 'react'
+//import './style/Home.css'
+import boatImage from '../assets/fondoReglamento.jpg';
 
 /*
 export const Home = () => {
@@ -75,7 +77,7 @@ class Home extends React.Component {
       } else {
         return (
          
-          <div dangerouslySetInnerHTML={ { __html: items } }></div>
+          <div className="reglamento" dangerouslySetInnerHTML={ { __html: items } }></div>
         );
       }
     }

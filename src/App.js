@@ -8,21 +8,25 @@ import {NoMatch} from './NoMatch';
 import {Layout} from './components/Layout'
 import {NavigationBar} from './components/NavigationBar'
 import {Jumbotron} from './components/Jumbotron'
+import Miembros from './components/Miembros'
 
 
 
 function App() {
   return (
     <React.Fragment>
+      
       <NavigationBar></NavigationBar>
-      <Jumbotron></Jumbotron>
+      
+{ /* <Jumbotron></Jumbotron>*/}
+      
+      
+      
       <Layout>
         <Router>
           <Switch>
             <Route exact path="/" component={Home}></Route>
-            <Route path="/about" component={About}></Route>
-            <Route path="/contact" component={Contact}></Route>
-            <Route component={NoMatch}></Route>
+            <Route path="/components/Miembros" component={Miembros}></Route>
           </Switch>
         </Router>
       </Layout>
